@@ -8,4 +8,6 @@ This is collection of posts and tutorials I've written over time.
 </p>
 <hr />
 
-{% include "postlist.njk" %}
+{% from "postlist.njk" import postlist as postlist %}
+
+{{ postlist(collections.posts) }}

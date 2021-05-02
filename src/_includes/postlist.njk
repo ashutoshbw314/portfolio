@@ -1,17 +1,19 @@
-<ul>
-{% for post in collections.posts | reverse %}
-  <li class='p-2 pl-3 mb-3 border-l-4 border-blue-100'>
-    <div class='space-y-1'>
-      <a href="{{ post.url }}">
-        <h3 class='text-xl font-bold text-gray-700'>{{ post.data.title }}</h3>
-      </a>
-      <time class='text-sm text-gray-500'>{{ post.date | prettyDate }}</time>
-    </div>
-    <ul class="flex mt-3 space-x-2">
-      {% for tag in post.data.tags %}
-      <li><a class='px-2 py-1 bg-pink-100 rounded-lg hover:bg-pink-200' href="/tags/{{tag}}/index.html">{{tag}}</a></li>
-      {% endfor %}
-    </ul>
-  </li>
-{% endfor %}
-</ul>
+{% macro postlist(posts) %}
+  <ul>
+  {% for post in posts | reverse %}
+    <li class='p-2 pl-3 mb-3 border-l-4 border-blue-100'>
+      <div class='space-y-1'>
+        <a href="{{ post.url }}">
+          <h3 class='text-xl font-bold text-gray-700'>{{ post.data.title }}</h3>
+        </a>
+        <time class='text-sm text-gray-500'>{{ post.date | prettyDate }}</time>
+      </div>
+      <ul class="flex mt-3 space-x-2">
+        {% for tag in post.data.tags %}
+        <li><a class='px-2 py-1 bg-pink-100 rounded-lg hover:bg-pink-200' href="/tags/{{tag}}/index.html">{{tag}}</a></li>
+        {% endfor %}
+      </ul>
+    </li>
+  {% endfor %}
+  </ul>
+{% endmacro %}

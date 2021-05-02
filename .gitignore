@@ -3,3 +3,6 @@ node_modules
 
 # build artefacts
 public
+
+# CSS that get's build automatically
+src/css/style.css
