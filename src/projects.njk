@@ -1,0 +1,41 @@
+---
+layout: "base.njk"
+---
+
+<h1 class="text-5xl font-bold text-center text-gray-700">Some of my projects</h1>
+
+<div class="mt-5 space-y-10">
+{% for project in projects %}
+  <h2 class="text-4xl font-bold text-gray-700 border-b-4 border-pink-200">{{project.name}}</h2>
+  <div>
+    <span class="font-bold text-gray-700">Technologies: </span>
+  {% for tech in project.technologies%}
+    <span class="px-3 py-2 mx-3 font-bold text-gray-700 bg-yellow-100 rounded-lg shadow-sm">{{tech}}</span> 
+  {% endfor %}
+  </div>
+  {% for feature in project.features %}
+    <div class="px-3 lg:flex {{ 'flex-row-reverse justify-between' if loop.index0 % 2 == 0 else 'space-x-5'}}">
+      <img class="w-full p-2 border rounded-lg cursor-pointer lg:mx-0 lg:w-6/12 hover:scale-105 hover:shadow-lg shadow-sm transform transition" src="{{feature.photo}}" alt="">
+      <div class="mt-4 ml-4">
+        <h3 class='text-2xl font-bold text-gray-600'>{{feature.title}}</h3>
+        <p class='text-lg text-gray-600'>{{feature.description}}</p>
+        <ul class='ml-5 text-gray-700 list-disc list-outside'>
+        {% for point in feature.points %}
+          <li class='text-md'>{{point}}</li>
+        {% endfor %}
+        </ul>
+      </div>
+    </div>
+  {% endfor %}
+  <div class='flex justify-center space-x-3'>
+    <a
+      class="inline-block mt-2 py-2 px-4 rounded-lg transform transition bg-indigo-500 hover:bg-indigo-600 hover:-translate-y-0.5 focus:ring-indigo-500 focus:ring-opacity-50 focus:outline-none focus:ring tracking-wider font-semibold text-sm text-white shadow sm:text-base cursor-pointer"
+      href="{{project.website}}"
+      >Site</a>
+    <a
+      class="inline-block mt-2 py-2 px-4 rounded-lg transform transition bg-indigo-500 hover:bg-indigo-600 hover:-translate-y-0.5 focus:ring-indigo-500 focus:ring-opacity-50 focus:outline-none focus:ring tracking-wider font-semibold text-sm text-white shadow sm:text-base cursor-pointer"
+      href="{{project.github}}"
+      >Github</a>
+  </div>
+{% endfor %}
+</div>
