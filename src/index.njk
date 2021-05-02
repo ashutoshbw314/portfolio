@@ -1,0 +1,47 @@
+---
+layout: "base.njk"
+---
+
+<div class="flex flex-col flex-col-reverse items-center mx-auto md:flex-row space-x-5">
+  <div class="flex flex-col">
+    <div class="self-start">
+      <h1 class="ml9">
+        <span class="text-wrapper">
+          <span class="text-4xl font-bold tracking-tighter text-gray-800 letters">Hello, I'm Ashutosh Biswas!</span>
+        </span>
+      </h1>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+      <p class='py-3 text-xl text-gray-700'>
+       I'm a JavaScript programmer and frontend developer. This website is my digital garden - here I share my works to world.
+      </p>
+    </div>
+    <a
+      class="self-start flex py-2 px-4 rounded-lg transform transition mt-3 ml-4 bg-indigo-500 hover:bg-indigo-600 hover:-translate-y-0.5 focus:ring-indigo-500 focus:ring-opacity-50 focus:outline-none focus:ring tracking-wider font-semibold text-sm text-white shadow sm:text-base cursor-pointer"
+      href="/assets/docs/resume-of-ashutosh-biswas.pdf"
+      download
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+<path fill-rule="evenodd" d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V7.414A2 2 0 0015.414 6L12 2.586A2 2 0 0010.586 2H6zm5 6a1 1 0 10-2 0v3.586l-1.293-1.293a1 1 0 10-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 11.586V8z" clip-rule="evenodd" />
+</svg>
+      <span class="inline-block ml-2">Resume</span>
+    </a>
+  </div>
+  <img class="object-cover object-right p-1 mb-8 border rounded-lg shadow-md cursor-pointer lg:mb-0 transform transition -rotate-6 hover:rotate-0 hover:scale-105 hover:shadow-xl w-72 h-72" src="/assets/img/profile-photo.jpg" alt="">
+</div>
+
+
+<script>
+// Wrap every letter in a span
+var textWrapper = document.querySelector('.ml9 .letters');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: false})
+  .add({
+    targets: '.ml9 .letter',
+    scale: [0, 1],
+    duration: 1500,
+    elasticity: 600,
+    delay: (el, i) => 45 * (i+1)
+  })
+</script>
