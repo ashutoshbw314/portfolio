@@ -1,23 +1,20 @@
 ---
+title: "Ashutosh Biswas"
 layout: "base.njk"
 ---
 
-<div class="flex flex-col flex-col-reverse items-center mx-auto md:flex-row space-x-5">
+<div class="flex flex-col flex-col-reverse items-center mx-auto mt-8 md:flex-row space-x-5">
   <div class="flex flex-col">
     <div class="self-start">
-      <h1 class="ml9">
-        <span class="text-wrapper">
-          <span class="text-3xl font-bold tracking-tighter text-gray-800 md:text-4xl letters">Hello, I'm Ashutosh Biswas!</span>
-        </span>
+      <h1 class="my-1 text-3xl font-bold tracking-tighter text-gray-800 md:text-4xl">
+        Hello, I'm Ashutosh Biswas!
       </h1>
-
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
       <p class='pb-3 text-xl text-gray-700'>
        I'm a JavaScript programmer and frontend developer. This website is my digital garden - here I share my works to the world. To see my all the awesome projects I've build see <a href="/projects" class='text-indigo-600 hover:underline'>projects</a>.
       </p>
     </div>
     <a
-      class="self-start flex py-2 px-4 rounded-lg transform transition mt-3 ml-4 bg-indigo-500 hover:bg-indigo-600 hover:-translate-y-0.5 focus:ring-indigo-500 focus:ring-opacity-50 focus:outline-none focus:ring tracking-wider font-semibold text-sm text-white shadow sm:text-base cursor-pointer"
+      class="self-start flex py-2 px-4 rounded-lg transform transition mt-3 ml-4 bg-blue-500 hover:bg-blue-400 hover:-translate-y-0.5 focus:ring-blue-200 focus:ring-opacity-50 focus:outline-none focus:ring tracking-wider font-semibold text-sm text-white shadow sm:text-base cursor-pointer"
       href="/assets/docs/resume-of-ashutosh-biswas.pdf"
       download
     >
@@ -29,19 +26,3 @@ layout: "base.njk"
   </div>
   <img class="object-cover object-right p-1 mb-8 border rounded-lg shadow-md cursor-pointer lg:mb-0 transform transition -rotate-6 hover:rotate-0 hover:scale-105 hover:shadow-xl w-72 h-72" src="/assets/img/profile-photo.jpg" alt="">
 </div>
-
-
-<script>
-// Wrap every letter in a span
-var textWrapper = document.querySelector('.ml9 .letters');
-textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-
-anime.timeline({loop: false})
-  .add({
-    targets: '.ml9 .letter',
-    scale: [0, 1],
-    duration: 1500,
-    elasticity: 600,
-    delay: (el, i) => 45 * (i+1)
-  })
-</script>

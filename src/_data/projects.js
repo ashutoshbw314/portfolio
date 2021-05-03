@@ -72,8 +72,8 @@ module.exports = [
   {
     name: "Let's Ride",
     technologies: ["React", "React leaflet", "Firebase", "React hook form", "Tailwindcss", "Vitejs"],
-    github: "https://github.com/ashutoshbw314/perfect-home-client",
-    website: "https://perfect-home-0.web.app/",
+    github: "https://github.com/ashutoshbw314/lets-ride",
+    website: "https://lets-ride-assignment.web.app/",
     features: [
       {
         title: "Overview",
@@ -94,14 +94,14 @@ module.exports = [
   },
   {
     name: "Legendary Leagues",
-    technologies: ["React", "Material UI", "Vitejs"],
-    github: "#",
+    technologies: ["React", "React router", "Material UI", "thesportsdb api", "Vitejs"],
+    github: "https://github.com/ashutoshbw314/legendary-leagues",
     website: "https://legendary-leagues.netlify.app/",
     features: [
       {
         title: "Overview",
         photo: "../assets/img/projects/legendary-leagues-1.png",
-        description: "An compilation of famous sport leagues around the world.",
+        description: "A compilation of famous sport leagues around the world.",
         points: [
           "On can select a league to see more info.",
           "All data are came from a API."
@@ -126,7 +126,8 @@ module.exports = [
         photo: "../assets/img/projects/meal-matcher-1.png",
         description: "An compilation of meals with their recipes.",
         points: [
-          "On can select a meal to see it's recipe",
+          "One can search for a meal using the search bar.",
+          "On can select a meal to see it's recipe.",
         ]
       },
       {

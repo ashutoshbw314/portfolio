@@ -10,7 +10,11 @@ module.exports = {
   },
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      borderWidth: {
+        '15': '15px',
+      }
+    },
   },
   variants: {
     extend: {},

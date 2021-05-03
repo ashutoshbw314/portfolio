@@ -2,10 +2,15 @@ module.exports = {
   purge: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      borderWidth: {
+        '15': '15px',
+      }
+    },
   },
   variants: {
-    extend: {},
+    extend: {
+    },
   },
   plugins: [
     require('@tailwindcss/typography'),

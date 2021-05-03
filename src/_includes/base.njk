@@ -3,14 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/assets/img/favicon.jpg">
   <title>{{ title }}</title>
   <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
   <link rel="stylesheet" href="/css/style.css">
 </head>
-<body>
-  {% include "navbar.njk" %}
-  <main class="max-w-4xl p-4 mx-auto">
-    {{ content | safe }}
-  </main>
+<body class="flex flex-col justify-between min-h-screen bg-gray-50">
+  <div>
+    {% include "navbar.njk" %}
+    <main class="max-w-4xl p-4 mx-auto">
+      {{ content | safe }}
+    </main>
+  </div>
+  <p class="my-1 text-center">Hand crafted with ❤️ using 11ty and Tailwindcss</p>
 </body>
 </html>
