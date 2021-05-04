@@ -1,5 +1,5 @@
 ---
-title: Finding fibonacci series for lazy programmers
+title: Finding Fibonacci series for lazy programmers
 date: 2021-05-03 17:51:00
 tags:
   - JavaScript
