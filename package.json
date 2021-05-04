@@ -6,12 +6,12 @@
   "scripts": {
     "eleventy": "eleventy",
     "minify-css": "postcss src/css/style.css -o public/css/style.css",
-    "start": "npm run clean && npm run dev:tailbuild && npx eleventy --serve",
+    "start": "ELEVENTY_ENV=dev npm run clean && npm run dev:tailbuild && npx eleventy --serve",
     "tailbuild": "tailwindcss-cli build src/css/tailwind.css -o src/css/style.css",
     "dev:tailbuild": "tailwindcss-cli build src/css/tailwind.css -c ./tailwind.config.dev.js -o src/css/style.css",
     "clean": "rm -rf public",
     "html": "html-minifier --config-file=.html-minifier.json --input-dir=public --output-dir=public --file-ext=html",
-    "build": "npm run clean && npm run tailbuild && npm run eleventy && npm run html && npm run minify-css"
+    "build": "ELEVENTY_ENV=prod npm run clean && npm run tailbuild && npm run eleventy && npm run html && npm run minify-css"
   },
   "keywords": [],
   "author": "",

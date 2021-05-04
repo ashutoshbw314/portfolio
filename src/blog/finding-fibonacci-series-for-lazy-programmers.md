@@ -16,4 +16,4 @@ const fibSeries = n =>  n < 2n ? [[0n], [0n, 1n]][n] : (s => [...s, s.pop() + s.
 console.log(fibSeries(500n).join("\n"));
 ```
 
-Isn't that fascinating? Is it the shortest possible way to find fibonacci series in JavaScript? Who knows? If anyone knows any solution shorter than this, I would love know about it. I love lazy coding.
+Isn't that fascinating? Is it the shortest possible way to find fibonacci series in JavaScript? Who knows? If anyone knows any solution shorter than this, I would love to know about it.

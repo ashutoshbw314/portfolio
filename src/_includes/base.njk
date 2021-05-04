@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+{% if env.isProd %}
+<!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9N6N4CL34B"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-9N6N4CL34B');
+  </script>
+{% endif %}
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="/assets/img/favicon.jpg">
@@ -15,6 +26,6 @@
       {{ content | safe }}
     </main>
   </div>
-  <p class="my-1 text-center">Hand crafted with ❤️ using 11ty and Tailwindcss</p>
+  <p class="my-1 text-sm text-center text-gray-700">Hand crafted with ❤️  by {{env.author}} © <a href="/licenses" class="text-indigo-700 hover:underline">Licenses</a></p>
 </body>
 </html>
