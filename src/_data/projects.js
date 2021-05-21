@@ -7,7 +7,7 @@ module.exports = [
     features: [
       {
         title: "Overview",
-        photo: "../assets/img/projects/perfect-home-1.png",
+        photo: "../../assets/img/projects/perfect-home-1.png",
         description: "A home service providing company",
         points: [
           "On can create an account and then order for a service.",
@@ -18,7 +18,7 @@ module.exports = [
       },
       {
         title: "Admin support",
-        photo: "../assets/img/projects/perfect-home-2.png",
+        photo: "../../assets/img/projects/perfect-home-2.png",
         description: "Admin page",
         points: [
           "Admin can set the status of a order.",
@@ -27,7 +27,7 @@ module.exports = [
       },
       {
         title: "Orders",
-        photo: "../assets/img/projects/perfect-home-3.png",
+        photo: "../../assets/img/projects/perfect-home-3.png",
         description: "Orders page",
         points: [
           "Payment is done with credit card.",
@@ -43,7 +43,7 @@ module.exports = [
     features: [
       {
         title: "Overview",
-        photo: "../assets/img/projects/artpress-1.png",
+        photo: "../../assets/img/projects/artpress-1.png",
         description: "A site artists and art lovers where artists can make living by selling their artworks.",
         points: [
           "Artists can sell artworks.",
@@ -52,7 +52,7 @@ module.exports = [
       },
       {
         title: "Manage Artworks",
-        photo: "../assets/img/projects/artpress-2.png",
+        photo: "../../assets/img/projects/artpress-2.png",
         description: "Admin can manage artworks.",
         points: [
           "Each artworks detail information is shown.",
@@ -61,7 +61,7 @@ module.exports = [
       },
       {
         title: "Add artwork",
-        photo: "../assets/img/projects/artpress-3.png",
+        photo: "../../assets/img/projects/artpress-3.png",
         description: "Here artists can upload their art's photo and information.",
         points: [
           "An user can set price of the product.",
@@ -77,7 +77,7 @@ module.exports = [
     features: [
       {
         title: "Overview",
-        photo: "../assets/img/projects/lets-ride-1.png",
+        photo: "../../assets/img/projects/lets-ride-1.png",
         description: "A travelling website.",
         points: [
           "Anyone can order for ride.",
@@ -86,7 +86,7 @@ module.exports = [
       },
       {
         title: "Interactive map",
-        photo: "../assets/img/projects/lets-ride-2.png",
+        photo: "../../assets/img/projects/lets-ride-2.png",
         description: "User can see routes using interactive map.",
         points: [],
       },
@@ -100,7 +100,7 @@ module.exports = [
     features: [
       {
         title: "Overview",
-        photo: "../assets/img/projects/legendary-leagues-1.png",
+        photo: "../../assets/img/projects/legendary-leagues-1.png",
         description: "A compilation of famous sport leagues around the world.",
         points: [
           "On can select a league to see more info.",
@@ -109,7 +109,7 @@ module.exports = [
       },
       {
         title: "Detail League info",
-        photo: "../assets/img/projects/legendary-leagues-2.png",
+        photo: "../../assets/img/projects/legendary-leagues-2.png",
         description: "Here you can see detail information about the selected league.",
         points: [],
       },
@@ -123,7 +123,7 @@ module.exports = [
     features: [
       {
         title: "Overview",
-        photo: "../assets/img/projects/meal-matcher-1.png",
+        photo: "../../assets/img/projects/meal-matcher-1.png",
         description: "An compilation of meals with their recipes.",
         points: [
           "One can search for a meal using the search bar.",
@@ -132,7 +132,7 @@ module.exports = [
       },
       {
         title: "The recipe",
-        photo: "../assets/img/projects/meal-matcher-2.png",
+        photo: "../../assets/img/projects/meal-matcher-2.png",
         description: "Here one can see the recipe.",
         points: [],
       },
